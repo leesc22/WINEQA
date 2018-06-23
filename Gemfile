@@ -39,12 +39,13 @@ group :development do
   gem 'letter_opener'
   gem 'better_errors'
   gem 'binding_of_caller'
-
+  
   gem 'guard-rspec', require: false
   gem 'guard-livereload', require: false
 
   gem 'spring'
   gem 'spring-commands-rspec'
+  gem 'letter_opener_web'
 end
 
 group :development, :test do

@@ -1,11 +1,10 @@
 GIT
   remote: https://github.com/Fodoj/acts-as-taggable-on.git
-  revision: 3160a13506bcb93fde95c9b77424c32afbcb6385
+  revision: ef3797a848bd76a5290d209ff856e55a9f9053c5
   branch: rails-5.2
   specs:
     acts-as-taggable-on (5.0.0)
-      activerecord (>= 5.0)
-      rake
+      activerecord (~> 5.0)
 
 GIT
   remote: https://github.com/twitter/activerecord-reputation-system.git
@@ -167,6 +166,10 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.6.0)
       launchy (~> 2.2)
+    letter_opener_web (1.3.4)
+      actionmailer (>= 3.2)
+      letter_opener (~> 1.0)
+      railties (>= 3.2)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -347,6 +350,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   letter_opener
+  letter_opener_web
   mini_magick
   pg (>= 0.18, < 2.0)
   pgreset
@@ -371,4 +375,4 @@ RUBY VERSION
    ruby 2.5.0p0
 
 BUNDLED WITH
-   1.16.1
+   1.16.2

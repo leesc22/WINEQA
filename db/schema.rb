@@ -54,10 +54,10 @@ ActiveRecord::Schema.define(version: 2018_05_03_175447) do
 
   create_table "rs_evaluations", id: :serial, force: :cascade do |t|
     t.string "reputation_name"
-    t.integer "source_id"
     t.string "source_type"
-    t.integer "target_id"
+    t.integer "source_id"
     t.string "target_type"
+    t.integer "target_id"
     t.float "value", default: 0.0
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -69,8 +69,8 @@ ActiveRecord::Schema.define(version: 2018_05_03_175447) do
   end
 
   create_table "rs_reputation_messages", id: :serial, force: :cascade do |t|
-    t.integer "sender_id"
     t.string "sender_type"
+    t.integer "sender_id"
     t.integer "receiver_id"
     t.float "weight", default: 1.0
     t.datetime "created_at"
@@ -84,8 +84,8 @@ ActiveRecord::Schema.define(version: 2018_05_03_175447) do
     t.string "reputation_name"
     t.float "value", default: 0.0
     t.string "aggregated_by"
-    t.integer "target_id"
     t.string "target_type"
+    t.integer "target_id"
     t.boolean "active", default: true
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -107,10 +107,10 @@ ActiveRecord::Schema.define(version: 2018_05_03_175447) do
 
   create_table "taggings", id: :serial, force: :cascade do |t|
     t.integer "tag_id"
-    t.integer "taggable_id"
     t.string "taggable_type"
-    t.integer "tagger_id"
+    t.integer "taggable_id"
     t.string "tagger_type"
+    t.integer "tagger_id"
     t.string "context", limit: 128
     t.datetime "created_at"
     t.index ["context"], name: "index_taggings_on_context"
