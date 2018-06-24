@@ -1,28 +1,37 @@
-# frozen_string_literal: true
-
-include FactoryGirl::Syntax::Methods
-
-AvatarUploader.enable_processing = false
-
-unless User.exists?(username: 'admin')
-  admin = create :admin
-  puts "\nCreated a user with credentials: #{admin.username}/#{admin.password}"
-end
-
-
-5.times { create :confirmed_user }
-36.times { create :category }
-
-Category.first(3).each do |category|
-  rand(2..5).times { create :question, author: User.all.sample, category: category, created_at: Faker::Date.backward(20) }
-end
-
-Question.all.each do |question|
-  rand(0..5).times { create :answer, author: User.all.sample, question: question }
-end
-
-Category.create(name:"FRANCE Bordeaux")
-
-
-
-
+Category.create(name:"FRANCE_ALL")
+Category.create(name:"FRANCE_Bordeaux")
+Category.create(name:"FRANCE_Bourgogne")
+Category.create(name:"FRANCE_Champagne")
+Category.create(name:"FRANCE_ALsace")
+Category.create(name:"FRANCE_Jura & Savois")
+Category.create(name:"FRANCE_Chablis")
+Category.create(name:"FRANCE_Rhone")
+Category.create(name:"FRANCE_Provence")
+Category.create(name:"FRANCE_Languedoc")
+Category.create(name:"FRANCE_Southwest")
+Category.create(name:"Italy")
+Category.create(name:"Spain")
+Category.create(name:"Portugal")
+Category.create(name:"Germany")
+Category.create(name:"Hungary")
+Category.create(name:"Eastern Europe")
+Category.create(name:"Chile")
+Category.create(name:"Argentina")
+Category.create(name:"United States")
+Category.create(name:"Australia")
+Category.create(name:"New Zealand")
+Category.create(name:"South Africa")
+Category.create(name:"Japan_yamanashi")
+Category.create(name:"Japan_Nagano")
+Category.create(name:"Japan_Hokkaido")
+Category.create(name:"Others")
+Category.create(name:"Red Wine")
+Category.create(name:"White Wine")
+Category.create(name:"Rose Wine")
+Category.create(name:"Dry wine")
+Category.create(name:"Sweet wine")
+Category.create(name:"Organic wine")
+Category.create(name:"Additive-free wine")
+Category.create(name:"With Friend")
+Category.create(name:"With Family")
+    

@@ -70,3 +70,7 @@ for contribution guides.
 ## License
 
 Released under the BSD 2-clause license. See LICENSE.txt for details.
+
+# chord
+# sudo service postgresql start
+# rails s -b $IP -p $PORT
