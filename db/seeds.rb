@@ -9,6 +9,7 @@ unless User.exists?(username: 'admin')
   puts "\nCreated a user with credentials: #{admin.username}/#{admin.password}"
 end
 
+
 5.times { create :confirmed_user }
 36.times { create :category }
 
@@ -19,3 +20,9 @@ end
 Question.all.each do |question|
   rand(0..5).times { create :answer, author: User.all.sample, question: question }
 end
+
+Category.create(name:"FRANCE Bordeaux")
+
+
+
+
