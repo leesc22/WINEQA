@@ -2,10 +2,10 @@
 
 class User < ApplicationRecord
   mount_uploader :avatar, AvatarUploader
-  devise :database_authenticatable, :registerable, :confirmable,
-         :recoverable, :rememberable, :trackable, :validatable
+  devise :database_authenticatable, :registerable, 
+         :recoverable, :rememberable, :trackable, :validatable,:confirmable,:authentication_keys => [:login]
 
-  attr_accessor :login
+  attr_accessor :login 
   enum role: %i[user admin moderator banned]
 
   has_many :answers, -> { where(anonymous: false) }, foreign_key: :author_id, dependent: :destroy

@@ -33,6 +33,8 @@ gem 'turbolinks', '~> 5.1.0'
 gem 'rails-timeago'
 gem 'whenever', require: false
 gem 'bootsnap', require: false
+gem 'rack-cors'
+
 
 group :development do
   gem 'pgreset'
