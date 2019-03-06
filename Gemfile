@@ -34,6 +34,7 @@ gem 'rails-timeago'
 gem 'whenever', require: false
 gem 'bootsnap', require: false
 gem 'rack-cors'
+gem 'rails-i18n'
 
 
 group :development do
