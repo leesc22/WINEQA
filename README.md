@@ -1,6 +1,10 @@
 Sommelier Free is Q&A APP for wine lover (return2)
 
-Using "Viode" , I made  this app!
+<<<<<<< HEAD
+Using "Viode" , I made  this app!!
+=======
+Using "Viode" , I made  this app！
+>>>>>>> 05cfafa54260c9ad767d5a00160a3a490531fc37
 
 Please look about Viode.
 
