@@ -1,8 +1,7 @@
 Sommelier Free is Q&A APP for wine lover (return2)
 
-<<<<<<< HEAD
-Using "Viode" , I made  this app!
-=======
+#ソムリエフリーは酒類に関する情報を共有する為のアプリです
+
 <<<<<<< HEAD
 Using "Viode" , I made  this app!!
 =======
