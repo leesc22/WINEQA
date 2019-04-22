@@ -19,7 +19,7 @@ gem 'kaminari'
 gem 'stringex'
 gem 'slim-rails'
 gem 'carrierwave'
-gem 'mini_magick', require: false
+gem 'mini_magick'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'font-awesome-sass', '~> 4.3.0'
 gem 'acts-as-taggable-on', '~> 5.0', github: 'Fodoj/acts-as-taggable-on', branch: 'rails-5.2'
