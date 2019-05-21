@@ -22,6 +22,8 @@ class Question < ApplicationRecord
   scope :recent,        -> { order(created_at: :desc) }
   scope :to_be_closed,  -> { where(['created_at < ? AND closed = ?', 31.days.ago, false]) }
 
+  mount_uploader :image, QuestionImageUploader
+
   def self.search(query)
     where('title ILIKE ?', "%#{query}%")
   end
