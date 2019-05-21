@@ -4,6 +4,10 @@
   p.help-block Example: "Why is the sky blue?"
 
 .form-group
+  = f.label :image
+  = f.file_field :image
+
+.form-group
   = f.label :body, 'Description (optional)'
   = f.text_area :body, rows: 5, class: 'form-control'
 

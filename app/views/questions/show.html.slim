@@ -24,6 +24,8 @@
             span.avatar> = author_avatar(@question)
             span.author> = question_author(@question)
             span.time = timeago_tag @question.created_at
+          - if @question.image.present?
+            p = image_tag @question.image.url, alt: @question.title, class: 'image'
           = simple_format @question.body
 
     .question-answers
